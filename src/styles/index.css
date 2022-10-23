@@ -1,0 +1,32 @@
+.home-info-container {
+  max-width: 90%;
+  width: 90%;
+  margin: 0 auto;
+  padding: 6rem 0;
+}
+
+.category-container {
+  max-width: 90%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.highlight {
+  background-color: rgba(178, 147, 194, 0.35);
+  padding: 0.5rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.hero-details {
+  -webkit-margin-before: 0.5rem;
+          margin-block-start: 0.5rem;
+  font-weight: 400;
+  font-size: 3rem;
+}/*# sourceMappingURL=index.css.map */
