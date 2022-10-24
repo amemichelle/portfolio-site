@@ -18,7 +18,7 @@ const Project = ({projectTitle, projectDesc}) => {
                 </div>
 
                 <div class="content-container__right">
-                <StaticImage class="project-img" src="../images/menu-icon.svg" />
+                <StaticImage class="project-img" src="../images/right-arrow.svg" />
 
                 </div>
 

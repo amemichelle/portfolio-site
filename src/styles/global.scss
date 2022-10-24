@@ -1,6 +1,10 @@
 @use "./partials/fontstyles" as * ;
 @use "./partials/mixins" as * ;
+@use "./partials/breakpoints" as *;
 
+* {
+    box-sizing: border-box;
+  }
 
 body {
     font-family:"Apfel Grotezk";
@@ -13,6 +17,10 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-top:4rem;
+
+    @include breakpoint-min-size($xl){
+        max-width:70%;
+    }
 }
 
 .logo-link {
@@ -20,3 +28,43 @@ body {
     color:black;
     font-size: 1.75rem;
 }
+
+.menu-button {
+    padding:0.5rem;
+    &:hover{
+        background-color:red;
+    }
+}
+
+
+footer {
+    @include center-content;
+    @include flex-column;
+    padding-top:1.5rem;
+    border-top: 1px solid black;
+    @include breakpoint-min-size($xl){
+        max-width:70%;
+    }
+}
+
+.footer-name{
+    @include removeMarginBlock;
+    font-size:2rem;
+}
+
+.footer-email{
+    @include removeMarginBlock;
+    font-size:1.75rem;
+    padding: 1rem 0;
+}
+
+.footer__right {
+    @include flex-row;
+    gap:1rem;
+}
+
+.footer-img {
+    max-width:48px;
+}
+
+

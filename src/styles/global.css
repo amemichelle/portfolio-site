@@ -6,6 +6,10 @@
   font-family: "Apfel Grotezk Fett";
   src: url("../fonts/apfelgrotezk/ApfelGrotezk-Fett.woff") format("woff");
 }
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Apfel Grotezk";
 }
@@ -20,9 +24,63 @@ body {
   align-items: center;
   padding-top: 4rem;
 }
+@media (min-width: 1280px) {
+  .navbar {
+    max-width: 70%;
+  }
+}
 
 .logo-link {
   text-decoration: none;
   color: black;
   font-size: 1.75rem;
+}
+
+.menu-button {
+  padding: 0.5rem;
+}
+.menu-button:hover {
+  background-color: red;
+}
+
+footer {
+  max-width: 90%;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.5rem;
+  border-top: 1px solid black;
+}
+@media (min-width: 1280px) {
+  footer {
+    max-width: 70%;
+  }
+}
+
+.footer-name {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  font-size: 2rem;
+}
+
+.footer-email {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  font-size: 1.75rem;
+  padding: 1rem 0;
+}
+
+.footer__right {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.footer-img {
+  max-width: 48px;
 }/*# sourceMappingURL=global.css.map */
