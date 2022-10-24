@@ -3,7 +3,7 @@ import * as React from 'react'
 import Navbar from '../components/navbar'
 import Category from '../components/category';
 import "../styles/index.scss";
-
+import Project from '../components/project';
 
 
 const IndexPage = () => {
@@ -17,6 +17,8 @@ const IndexPage = () => {
       </div>
 
       <Category categoryName="Work -- Other Projects"></Category>
+
+      <Project projectTitle="Enhance the digital experience for girls in tech."  projectDesc="IAT 333: Interaction Design Methods"></Project>
     
     </body>
 

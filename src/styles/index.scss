@@ -1,15 +1,12 @@
-.home-info-container{
-    max-width:90%;
-    width:90%;
-    margin: 0 auto;
-    padding: 6rem 0;
+@use "./partials/mixins" as * ;
 
+.home-info-container{
+    @include center-content;
+    padding: 6rem 0;
 }
 
 .category-container { 
-    max-width:90%;
-    width:90%;
-    margin: 0 auto;
+    @include center-content;
 }
 
 .hero-title {
@@ -28,3 +25,42 @@
     font-weight:400;
     font-size:3rem;
 }
+
+.project-title{
+    @include removeMarginBlock;
+    font-size:1.8rem;
+}
+
+.project-desc{
+    @include removeMarginBlock;
+    font-size:1.5rem;
+    padding-top:0.5rem;
+}
+
+.project-container {
+    @include center-content;
+}
+
+.content-container {
+    @include flex-column;
+    justify-content:space-between;
+    align-content:center;
+    padding-top:2rem;
+}
+
+.content-container__left { 
+    padding-bottom:2rem;
+    border-bottom: 1px solid black;
+    max-width:90%;
+}
+
+
+
+
+
+.content-container__right {
+    display:flex;
+    flex-direction: column;
+    justify-content:center;    
+}
+

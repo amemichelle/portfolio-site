@@ -29,4 +29,47 @@
           margin-block-start: 0.5rem;
   font-weight: 400;
   font-size: 3rem;
+}
+
+.project-title {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  font-size: 1.8rem;
+}
+
+.project-desc {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+}
+
+.project-container {
+  max-width: 90%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  padding-top: 2rem;
+}
+
+.content-container__left {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid black;
+  max-width: 90%;
+}
+
+.content-container__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }/*# sourceMappingURL=index.css.map */
