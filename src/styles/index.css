@@ -36,6 +36,13 @@ body {
   font-size: 1.75rem;
 }
 
+.menu-button {
+  padding: 0.5rem;
+}
+.menu-button:hover {
+  background-color: red;
+}
+
 footer {
   max-width: 90%;
   width: 90%;

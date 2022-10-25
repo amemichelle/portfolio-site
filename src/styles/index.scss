@@ -1,6 +1,7 @@
 @use "../styles/global.scss";
 @use "./partials/mixins" as * ;
 @use "./partials/breakpoints" as *;
+@use "./partials/colors" as *;
 
 
 .home-info-container{
@@ -27,7 +28,7 @@
 
 .highlight {
     @include removeMarginBlock;
-    background-color:rgba($color: #B293C2, $alpha: 0.35);
+    background-color:$accent;
     padding:0.5rem;
     width:max-content;
 }

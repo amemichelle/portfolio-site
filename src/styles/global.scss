@@ -1,6 +1,8 @@
 @use "./partials/fontstyles" as * ;
 @use "./partials/mixins" as * ;
 @use "./partials/breakpoints" as *;
+@use "./partials/colors" as *;
+
 
 * {
     box-sizing: border-box;
@@ -8,6 +10,12 @@
 
 body {
     font-family:"Apfel Grotezk";
+    position:relative; 
+    margin:0;
+}
+
+.no-scroll { 
+    position:fixed;
 }
 
 
@@ -17,6 +25,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-top:4rem;
+
 
     @include breakpoint-min-size($xl){
         max-width:70%;
@@ -32,9 +41,42 @@ body {
 .menu-button {
     padding:0.5rem;
     &:hover{
-        background-color:red;
+        background-color:$accent;
+        transition: 0.5s ease-in;
     }
 }
+
+.nav-container {
+    width:100%;
+    height:100vh;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:#B293C2;
+    display:none;
+}
+
+.open {
+    display:block;
+}
+
+
+.nav-container__items { 
+    @include flex-column;
+}
+
+.nav-container__link { 
+    font-size:2rem;
+    text-decoration:none;
+}
+
+
+
+
+
+
+
+
 
 
 footer {

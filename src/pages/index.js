@@ -1,6 +1,7 @@
 // Step 1: Import React
 import * as React from 'react'
 import Navbar from '../components/navbar'
+import NavOverlay from '../components/navoverlay';
 import Category from '../components/category';
 import "../styles/index.scss";
 import Project from '../components/project';
@@ -10,9 +11,9 @@ import Footer from "../components/footer"
 
 const IndexPage = () => {
   return (
-    <body>
+    <body id="page-body">
       <Navbar></Navbar>
-
+      <NavOverlay></NavOverlay>
       <div class="home-info-container">
         <h1 class="hero-title">Hello, I'm <span class="highlight">Michelle!</span> </h1>
         <p class="hero-details">Currently a product designer @ Guusto. Always pursuing new things to learn. Studied design @ Simon Fraser University.</p>
