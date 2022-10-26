@@ -1,24 +1,25 @@
 import * as React from 'react';
 import "../styles/index.scss";
 //import DynamicImg from './dynamicimg';
-import { StaticImage } from "gatsby-plugin-image";
+//import { StaticImage } from "gatsby-plugin-image";
+import arrowIcon from "../images/right-arrow.svg";
 
 
-const Project = ({projectTitle, projectDesc}) => {
+const Project = ({projectTitle, projectDesc, projectImg}) => {
     return (
-        <div class="project-container">
-            <div class="project-container__img">
-             <StaticImage src="../images/git-cover.jpg" />
+        <div className="project-container">
+            <div className="project-container__img">
+             <img className="project-tile-img" src={projectImg}/>
             </div>
 
-            <div class="content-container">
-                <div class="content-container__left">
-                    <p class="project-title">{projectTitle}</p>
-                    <p class="project-desc">{projectDesc}</p>
+            <div className="content-container">
+                <div className="content-container__left">
+                    <p className="project-title">{projectTitle}</p>
+                    <p className="project-desc">{projectDesc}</p>
                 </div>
 
-                <div class="content-container__right">
-                <StaticImage class="project-img" src="../images/right-arrow.svg" />
+                <div className="content-container__right">
+                <img className="project-img" src={arrowIcon}/>
 
                 </div>
 

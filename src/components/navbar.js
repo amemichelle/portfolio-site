@@ -11,12 +11,12 @@ function openNav() {
 
 const navbar = () => {
   return (
-    <div class="navbar">
-        <div class="navbar__left">
-        <a href="/" class="logo-link">Michelle Swolfs</a>
+    <div className="navbar">
+        <div className="navbar__left">
+        <a href="/" className="logo-link">Michelle Swolfs</a>
         </div>
-        <div class="navbar__right">
-            <div class="menu-button" onClick = {openNav}>
+        <div className="navbar__right">
+            <div className="menu-button" onClick = {openNav}>
                 <StaticImage src="../images/menu-icon.svg" />
             </div>
         </div>

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import "../styles/index.scss";
 import { StaticImage } from "gatsby-plugin-image";
-
+import arrowIcon from "../images/right-arrow.svg";
 
 const Experience = ({experienceTitle,experienceDesc}) => {
 return(
@@ -13,7 +13,7 @@ return(
         </div>
 
         <div class="content-container__right">
-        <StaticImage class="project-img" src="../images/menu-icon.svg" />
+        <img class="project-img" src={arrowIcon}/>
         </div>
     </div>
 </div>

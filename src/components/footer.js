@@ -1,18 +1,20 @@
 import * as React from 'react';
 import "../styles/global.scss";
 import { StaticImage } from "gatsby-plugin-image";
+import Linkedin from "../images/linkedin.svg";
+import Github from "../images/github.svg";
 
 
 const Footer = () => {
     return(
         <footer>
-            <div class="footer__left">
-                <p class="footer-name">Michelle Swolfs</p>
-                <p class="footer-email">swolfsmichelle8@gmail.com</p>
+            <div className="footer__left">
+                <p className="footer-name">Michelle Swolfs</p>
+                <p className="footer-email">swolfsmichelle8@gmail.com</p>
             </div>
-            <div class="footer__right">
-            <StaticImage class="footer-img" src="../images/menu-icon.svg" />
-            <StaticImage class="footer-img" src="../images/menu-icon.svg" />
+            <div className="footer__right">
+            <img className="footer-img" src={Linkedin}/>
+            <img className="footer-img" src={Github}/>
             </div>
         </footer>
 

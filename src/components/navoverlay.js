@@ -11,12 +11,14 @@ function closeNav(){
 
 const NavOverlay = () => {
     return(
-        <div class="nav-container" id="nav-menu" style={{zIndex:1}} onClick={closeNav}>
-            <div class="nav-container__items">
-                <a href="" class="nav-container__link">Work</a>
-                <a href="" class="nav-container__link">About</a>
-                <a href="" class="nav-container__link">Resume</a>
+        <div className="nav-container" id="nav-menu" style={{zIndex:1}} onClick={closeNav}>
+            <div className="nav-container__items-parent">
+            <div className="nav-container__items">
+                <a href="" className="nav-container__link">Work</a>
+                <a href="" className="nav-container__link">About</a>
+                <a href="" className="nav-container__link">Resume</a>
             </div>
+        </div>
         </div>
     )
 }
