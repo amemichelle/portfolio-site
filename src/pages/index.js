@@ -31,11 +31,9 @@ const IndexPage = () => {
       <Project projectTitle="Enhance the digital experience for girls in tech."  projectDesc="IAT 333: Interaction Design Methods" projectImg={GitImage}></Project>
       <Project projectTitle="Connecting employers, agencies, and individuals over microjobs."  projectDesc="Civic Innocation Change Lab" projectImg={CultivateImage}></Project>
 
-
-
       <Category categoryName="Experiences"></Category>
-      <Experience experienceTitle="Junior Product Designer @ Guusto" experienceDesc="placeholder text"></Experience>
-      <Experience experienceTitle="Marketing Directior @ SFU Surge" experienceDesc="placeholder text"></Experience>
+      <Experience experienceTitle="Junior Product Designer @ Guusto" experienceDesc="Championed the redesign of the company's mobile app, while managing grapic design, web design, and development tasks that influenced an increase in positive reviews on the company's G2 and Google Play store pages."></Experience>
+      <Experience experienceTitle="Marketing Directior @ SFU Surge" experienceDesc="Led the communication design, website design, and marketing strategy, for the club and it's flagship event resulting in 700+ followers, and impacting 1000+ event particpipants."></Experience>
 
       <Category categoryName="Education"></Category>
       <Experience experienceTitle="Design @ Simon Fraser University" experienceDesc="September 2016 - June 2022"></Experience>

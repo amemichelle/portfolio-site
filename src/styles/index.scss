@@ -48,6 +48,7 @@
     @include removeMarginBlock;
     font-size:1.5rem;
     padding: 1rem 0;
+    line-height:2rem;
 }
 
 .project-img {
@@ -57,6 +58,7 @@
 
 .project-tile-img{
     max-width:100%;
+    width:100%;
 }
 
 .project-container, .experience {
