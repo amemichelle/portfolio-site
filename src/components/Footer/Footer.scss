@@ -1,0 +1,33 @@
+.footer{
+    @include center-content;
+    @include flex-column;
+    padding-top:1.5rem;
+    padding-bottom:3rem;
+    border-top: 1px solid black;
+    @include breakpoint-min-size($xl){
+        max-width:70%;
+    }
+
+    &__name{
+        @include removeMarginBlock;
+        font-size:2rem;
+    }
+
+
+    &__email{
+        @include removeMarginBlock;
+        font-size:1.75rem;
+        padding: 1rem 0;
+    }
+
+
+    &__right{
+        @include flex-row;
+        gap:1rem;
+    }
+
+
+    &__img{
+        max-width:12rem;
+    }
+}

@@ -1,27 +1,27 @@
-// Step 1: Import React
+// background things
 import * as React from 'react'
-import Navbar from '../components/navbar'
-import NavOverlay from '../components/navoverlay';
-import Category from '../components/category';
-import "../styles/index.scss";
-import Project from '../components/project';
-import Experience from "../components/experiences";
-import Footer from "../components/footer";
+
+// components
+import Navbar from '../../components/Navbar/Navbar'
+import NavOverlay from '../../components/NavOverlay/NavOverlay';
+import Category from '../../components/Category/Category';
+import Project from '../../components/Project/project';
+import Experience from "../../components/Experiences/Experiences";
+import Footer from "../../components/Footer/Footer";
+
+// images
 import GitImage from "../images/git-cover.jpg";
 import CultivateImage from "../images/cultivate.jpg";
 import SurgeImage from "../images/surge.jpg"
-
-
-
 
 const IndexPage = () => {
   return (
     <body id="page-body">
       <Navbar></Navbar>
       <NavOverlay></NavOverlay>
-      <div className="home-info-container">
-        <h1 className="hero-title">Hello, I'm <span class="highlight">Michelle!</span> </h1>
-        <p className="hero-details">Currently a product designer @ Guusto. Always pursuing new things to learn. Studied design @ Simon Fraser University.</p>
+      <div className="hero">
+        <h1 className="hero__title">Hello, I'm <span class="highlight">Michelle!</span> </h1>
+        <p className="hero__details">Currently a product designer @ Guusto. Always pursuing new things to learn. Studied design @ Simon Fraser University.</p>
       </div>
 
       <Category categoryName="Work -- Other Projects"></Category>

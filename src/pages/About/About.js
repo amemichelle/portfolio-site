@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Layout from '../components/navbar'
+import Layout from '../../components/Navbar/navbar'
 
 const AboutPage = () => {
   return (

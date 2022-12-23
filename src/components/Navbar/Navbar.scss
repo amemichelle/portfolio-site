@@ -1,0 +1,31 @@
+.navbar{
+    @include center-content;
+    @include flex-row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:4rem;
+
+    @include breakpoint-min-size($xl){
+        max-width:70%;
+    }
+
+    &__logo-link{
+        text-decoration: none;
+        color:black;
+        font-size: 1.75rem;
+    }
+
+    &__menu-button{
+        padding:0.5rem;
+        &:hover{
+            background-color:$accent;
+            transition: 0.5s ease-in;
+        }
+
+    }
+
+
+
+
+
+}

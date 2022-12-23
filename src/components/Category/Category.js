@@ -6,7 +6,7 @@ import "../styles/index.scss";
 const category = ({categoryName}) => {
   return (
    <div className="category-container">
-   <p className="highlight">{categoryName}</p>
+   <p className="category-container__highlight">{categoryName}</p>
    </div>
   )
 }

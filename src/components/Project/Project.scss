@@ -1,0 +1,58 @@
+.project{
+    @include center-content;
+    margin-bottom:6rem;
+    @include breakpoint-min-size($xl){
+        max-width:70%;
+    }
+    
+    &__img{
+        margin-top:1rem;
+        max-width:60px;
+    }
+
+    &__tile-img{
+        max-width:100%;
+        width:100%;
+    }
+
+    &__content{
+        @include flex-column;
+        justify-content:space-between;
+        align-content:center;
+
+    }
+
+    &__left{
+        padding-top:1.5rem;
+        border-top: 1px solid black;
+        max-width:100%;
+    }
+
+
+    &__title{
+        @include removeMarginBlock;
+        font-size:1.8rem;
+
+    }
+
+    &__desc{
+        @include removeMarginBlock;
+        font-size:1.5rem;
+        padding: 1rem 0;
+        line-height:2rem;
+    }
+
+
+    &__right{
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+
+
+
+
+
+
+
+}

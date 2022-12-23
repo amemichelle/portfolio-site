@@ -1,0 +1,14 @@
+.category-container { 
+    @include center-content;
+    margin-bottom:1rem;
+    @include breakpoint-min-size($xl){
+        max-width:70%;
+    }
+
+    &__highlight{
+        @include removeMarginBlock;
+        background-color:$accent;
+        padding:0.5rem;
+        width:max-content;
+    }
+}

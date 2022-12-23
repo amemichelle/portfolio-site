@@ -13,10 +13,10 @@ const navbar = () => {
   return (
     <div className="navbar">
         <div className="navbar__left">
-        <a href="/" className="logo-link">Michelle Swolfs</a>
+        <a href="/" className="navbar__logo-link">Michelle Swolfs</a>
         </div>
         <div className="navbar__right">
-            <div className="menu-button" onClick = {openNav}>
+            <div className="navbar__menu-button" onClick = {openNav}>
                 <StaticImage src="../images/menu-icon.svg" />
             </div>
         </div>
