@@ -1,5 +1,6 @@
 import * as React from "react";
 import arrowIcon from "../../images/right-arrow.svg";
+import "./Project.scss";
 
 const Project = ({ projectTitle, projectDesc, projectImg }) => {
   return (
@@ -15,7 +16,7 @@ const Project = ({ projectTitle, projectDesc, projectImg }) => {
         </div>
 
         <div className="project__right">
-          <img className="project__img" src={arrowIcon} />
+          <img className="project__img--icon" src={arrowIcon} />
         </div>
       </div>
     </div>

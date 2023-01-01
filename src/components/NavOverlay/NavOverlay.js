@@ -1,5 +1,5 @@
 import * as React from "react";
-// import "../../styles/global.scss";
+import "./NavOverlay.scss";
 
 function closeNav() {
   let nav = document.getElementById("nav-menu");

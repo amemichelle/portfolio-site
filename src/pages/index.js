@@ -1,5 +1,7 @@
 // background things
 import * as React from "react";
+import "../styles/global.scss";
+import "./Home.scss";
 
 // components
 import Navbar from "../components/Navbar/Navbar";

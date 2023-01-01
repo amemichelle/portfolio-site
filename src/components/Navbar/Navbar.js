@@ -1,7 +1,6 @@
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
-//import "./Navbar.scss";
-//import "../../styles/global.scss";
+import "./Navbar.scss";
 
 function openNav() {
   let nav = document.getElementById("nav-menu");
@@ -20,7 +19,7 @@ const navbar = () => {
       </div>
       <div className="navbar__right">
         <div className="navbar__menu-button" onClick={openNav}>
-          <StaticImage src="../images/menu-icon.svg" />
+          <StaticImage src="../../images/menu-icon.svg" />
         </div>
       </div>
     </div>

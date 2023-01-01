@@ -1,5 +1,5 @@
 import * as React from "react";
-// import "../../styles/global.scss";
+import "./Footer.scss";
 import Linkedin from "../../images/linkedin.svg";
 import Github from "../../images/github.svg";
 

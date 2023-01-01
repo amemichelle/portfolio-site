@@ -1,38 +1,40 @@
+@import "./breakpoints";
+
 @mixin center-content {
-    max-width:90%;
-    width:90%;
-    margin: 0 auto;
+  max-width: 90%;
+  width: 90%;
+  margin: 0 auto;
 }
 
-@mixin flex-row { 
-    display:flex;
-    flex-direction:row;
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
 }
 
 @mixin flex-column {
-    display:flex;
-    flex-direction:column;
+  display: flex;
+  flex-direction: column;
 }
 
 @mixin removeMarginBlock {
-    margin-block-start: 0;
-    margin-block-end:0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
-@mixin breakpoint-min-size($breakpoint){
-    @media (min-width:$breakpoint) {
-        @content;
-    }
+@mixin breakpoint-min-size($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
   }
-  
-  @mixin breakpoint-range($breakpoint1,$breakpoint2) {
-    @media (min-width:$breakpoint1) and (max-width:$breakpoint2) {
-        @content;        
-    }
+}
+
+@mixin breakpoint-range($breakpoint1, $breakpoint2) {
+  @media (min-width: $breakpoint1) and (max-width: $breakpoint2) {
+    @content;
   }
-  
-  @mixin breakpoint-max-size($breakpoint){
-    @media (max-width:$breakpoint) {
-        @content;
-    }
+}
+
+@mixin breakpoint-max-size($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
   }
+}

@@ -1,6 +1,5 @@
 import * as React from "react";
-// import "../../styles/global.scss";
-// import "./Experiences.scss";
+import "./Experiences.scss";
 import arrowIcon from "../../images/right-arrow.svg";
 
 const Experience = ({ experienceTitle, experienceDesc }) => {
