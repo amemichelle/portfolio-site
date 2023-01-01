@@ -1,23 +1,14 @@
-@use "./partials/fontstyles" as * ;
-@use "./partials/mixins" as * ;
+@use "./partials/fontstyles" as *;
+@use "./partials/mixins" as *;
 @use "./partials/breakpoints" as *;
 @use "./partials/colors" as *;
 
-
 * {
-    box-sizing: border-box;
-  }
-
-body {
-    font-family:"Apfel Grotezk";
-    position:relative; 
-    margin:0;
+  box-sizing: border-box;
 }
 
-
-
-
-
-
-
-
+body {
+  font-family: "Apfel Grotezk";
+  position: relative;
+  margin: 0;
+}

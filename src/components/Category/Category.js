@@ -1,14 +1,13 @@
-import * as React from 'react';
-import "../styles/index.scss";
+import * as React from "react";
+// import "../../styles/global.scss";
+// import "./Category.scss";
 
-
-
-const category = ({categoryName}) => {
+const category = ({ categoryName }) => {
   return (
-   <div className="category-container">
-   <p className="category-container__highlight">{categoryName}</p>
-   </div>
-  )
-}
+    <div className="category-container">
+      <p className="category-container__highlight">{categoryName}</p>
+    </div>
+  );
+};
 
-export default category
+export default category;
