@@ -57,7 +57,7 @@ const IndexPage = () => {
       ></Experience>
       <Experience
         experienceTitle="Marketing Directior @ SFU Surge"
-        experienceDesc="Led the communication design, website design, and marketing strategy, for the club and it's flagship event resulting in 700+ followers, and impacting 1000+ event particpipants."
+        experienceDesc="Led the communication design, website design, and marketing strategy, for the club and it's flagship event resulting in 700+ followers, and impacting 1000+ event participants."
       ></Experience>
 
       <Category categoryName="Education"></Category>
