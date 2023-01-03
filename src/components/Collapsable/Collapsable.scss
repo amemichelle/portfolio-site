@@ -1,0 +1,25 @@
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/colors";
+
+.collapse {
+  &__button {
+    @include flex-row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    outline: none;
+    //border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 1rem;
+  }
+
+  &__content.collapsed {
+    display: none;
+  }
+
+  &__content.expanded {
+    display: block;
+  }
+}

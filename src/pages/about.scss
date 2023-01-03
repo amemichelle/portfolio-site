@@ -8,6 +8,10 @@
     max-width: 70%;
   }
 
+  @include breakpoint-min-size($sm) {
+    max-width: 100%;
+  }
+
   &__title {
     font-size: 2rem;
     font-weight: 400;
@@ -16,15 +20,33 @@
   &__summary {
     background-color: #f2f2f5;
     padding: 1rem;
-    width: 80%;
+    width: 100%;
     margin-top: 1rem;
   }
 
   &__image {
-    width: 80%;
+    width: 100%;
   }
 
   &__bold {
     font-weight: 700;
+  }
+}
+
+.ig {
+  @include flex-column;
+  gap: 4px;
+
+  @include breakpoint-min-size($md) {
+    @include flex-row;
+  }
+
+  &__container {
+    box-shadow: 1px 1px 4px #f2f2f5;
+    max-width: 1;
+  }
+
+  &__image {
+    width: 100%;
   }
 }
